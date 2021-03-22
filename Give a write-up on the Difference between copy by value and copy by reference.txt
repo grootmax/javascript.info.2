@@ -1,0 +1,10 @@
+The Difference between Copy by value and Copy by reference
+The first time you see the copy by value or the copy by reference there is a high chance of getting confused with the concepts. So in this post I will explain using a simple code examples to understand the concept.
+Copy by Value → Primitive Data Type
+Copy by Reference → Non Primitive Data Type
+Copy by Value :
+Copy by value is basically a shallow copy of a Primitive data type. When we consider a variable “a” assigned with the value 10 (a = 10)and lets have a temporary variable(temp) which is assigned with the variable “a” (temp = a).what happens here when we try to get the value of “a” and “temp”, we get 10 and 10.
+Now lets change the value of a = 50 and try to print “a” and “temp”, we get the output as 50 and 10. This happens because the value of variable a was assigned at the first to temp (temp = 10) and then the value of a was changed (a = 50). Here the variable temp acts as a new variable with the value. Thus doesn’t depend on “a” once assigned.
+Copy by Reference :
+Copy by reference for Non-primitive data type does a deep copy. When a variable “A” is assigned with a array elements of [ 1, 2, 3] and there is one more variable “temp” which is assigned with A , i.e ( temp = A; ). Printing A and temp gives [1,2,3] and [1,2,3].
+Now lets try to change the values of “temp”. Assigning ( temp[0] = 10 ) . Printing the values of A and temp now we get [10,2,3] and [10,2,3].This is basically a reference to the array in temp = A. So by using this the actual value also will be changed because it is just a reference to the actual array.

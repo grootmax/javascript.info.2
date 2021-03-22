@@ -1,0 +1,11 @@
+How to copy by value a composite datatype (array + objects)?
+There are three ways to copy by value for composite data types.
+Using the Spread operator (…) operator.
+Using the Object.assign() method.
+Using the JSON.stringify() and JSON.parse() methods
+The Spread Operator
+The spread operator (…) does a shallow copy of the variable data. It copies the values present that is the non primitive data type.
+The Object.assign()
+The Object.assign() method copies all properties from one source object to a target object. It returns the target object. This does the shallow copy of the original object.
+The JSON.parse() and JSON.stringify()
+The JSON object is available in all the browsers, this has two methods for JSON data i.e the parse and the stringify. Parse takes a JSON string and transforms it into JS Object and Stringify takes JS Object and transforms into a JSON Object.
